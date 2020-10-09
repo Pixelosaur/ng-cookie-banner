@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    title = 'ng-cookie-banner';
+    title: string = 'ng-cookie-banner';
 }
