@@ -7,6 +7,7 @@ import { ModalComponent } from './components/modal/modal.component';
 @Component({
     selector: 'app-cookie-banner',
     templateUrl: './cookie-banner.component.html',
+    styleUrls: ['./cookie-banner.component.scss'],
 })
 export class CookieBannerComponent implements OnInit {
     bannerSettings: CookieBanner[] = [];
