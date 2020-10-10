@@ -7,9 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CookieBannerParser } from './cookie-banner/parsers/cookie-banner.parser';
 import { NgbAlertModule, NgbCollapseModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './cookie-banner/components/modal/modal.component';
+import { CookieBannerSettingsComponent } from './cookie-banner/components/cookie-banner-settings/cookie-banner-settings.component';
 
 @NgModule({
-    declarations: [AppComponent, CookieBannerComponent, ModalComponent],
+    declarations: [
+        AppComponent,
+        CookieBannerComponent,
+        ModalComponent,
+        CookieBannerSettingsComponent,
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
