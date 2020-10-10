@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100vh;
+    position: relative;
+    font-family: 'Raleway', 'Roboto', sans-serif;
+
+    .btn {
+        font-weight: 600 !important;
+        letter-spacing: 0.5px;
+        font-size: 0.875rem;
+    }
+
+    .app-wrapper {
+        background-color: #264653;
+        height: 100vh;
+
+        h3 {
+            font-weight: 200;
+        }
+        h1 {
+            font-weight: 600;
+        }
+    }
+}
