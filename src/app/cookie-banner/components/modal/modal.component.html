@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h4 class="modal-title">Can we store cookies?</h4>
+    <button type="button"
+            class="close"
+            (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet tortor neque. Donec at erat facilisis nibh sollicitudin hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam sem ligula, interdum eu lorem ut, mattis pretium velit. Nulla eu lorem nisl. Sed ornare ultricies tincidunt.</p>
+</div>
+<div class="modal-footer d-flex justify-content-start align-items-center">
+    <button type="button"
+            class="btn btn-success"
+            (click)="activeModal.close('Close click')">
+        Accept All
+    </button>
+    <button type="button"
+            class="btn btn-outline-secondary"
+            (click)="activeModal.close('Close click')">
+      Save Settings
+    </button>
+</div>
