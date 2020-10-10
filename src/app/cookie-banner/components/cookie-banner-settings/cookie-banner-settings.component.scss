@@ -1,0 +1,30 @@
+.cookie-settings {
+    padding: 0 20px;
+
+    p,
+    td,
+    th,
+    .title {
+        font-size: 0.875rem;
+    }
+
+    th,
+    .title {
+        font-weight: 600;
+    }
+
+    .title {
+        padding: 20px 0;
+        cursor: pointer;
+    }
+
+    .content {
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        p,
+        td {
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+}

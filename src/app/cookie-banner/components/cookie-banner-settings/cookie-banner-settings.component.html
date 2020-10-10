@@ -1,7 +1,7 @@
-<div>
-    <div class="settingsTitle"
+<div class="bg-white rounded-sm cookie-settings">
+    <div class="title d-flex justify-content-between align-items-center"
          (click)="isSettingsContentCollapsed = !isSettingsContentCollapsed">
-        Advertising
+        <span>Advertising</span>
         <i class="fas"
            [ngClass]="{
                 'fa-angle-down': isSettingsContentCollapsed,
@@ -9,10 +9,10 @@
             }">
         </i>
     </div>
-    <div class="settingsContent"
+    <div class="content"
          id="collapsedSettingsContent"
          [ngbCollapse]="isSettingsContentCollapsed">
-        We use social media tools on our website to enable sharing from our website.
+        <p>We use social media tools on our website to enable sharing from our website.</p>
 
         <table class="table table-borderless">
             <thead>
