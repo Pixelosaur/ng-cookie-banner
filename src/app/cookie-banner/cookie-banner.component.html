@@ -1,1 +1,15 @@
-<h1>Hello from cookie banner component</h1>
+<ngb-alert [type]="'info'"
+           [dismissible]="false"
+           class="d-flex flex-wrap justify-content-between align-items-center">
+    <span>
+        <strong>We value your privacy!</strong>
+        We use technologies such as cookies for a better experience on our site.
+    </span>
+    <div>
+        <button class="btn btn-success btn-sm mr-2">Accept All</button>
+        <button class="btn btn-outline-success btn-sm"
+                (click)="open()">
+          Manage Preferences
+        </button>
+    </div>
+</ngb-alert>
