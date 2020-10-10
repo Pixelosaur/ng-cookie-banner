@@ -17,19 +17,20 @@
 <div class="modal-footer d-flex justify-content-between align-items-center">
     <div>
         <button type="button"
-                class="btn btn-success mr-2"
-                (click)="activeModal.close('Close click')">
+                class="btn banner-btn mr-2"
+                (click)="activeModal.close('Accept All click')">
             Accept All
         </button>
         <button type="button"
                 class="btn btn-outline-secondary"
-                (click)="activeModal.close('Close click')">
+                (click)="activeModal.close('Save Settings click')">
             Save Settings
         </button>
     </div>
-    <span (click)="isCollapsed = !isCollapsed">
+    <span (click)="isCollapsed = !isCollapsed"
+          class="toggle-settings">
         Customize
-        <i class="fas"
+        <i class="fas ml-1"
            [ngClass]="{ 'fa-angle-down': isCollapsed, 'fa-angle-up': !isCollapsed }">
         </i>
     </span>
