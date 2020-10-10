@@ -8,6 +8,7 @@ import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 export class ModalComponent {
   // TODO: Add proper type
   @Input() content: any;
+
   isCollapsed: boolean = true;
 
   constructor(public activeModal: NgbActiveModal) {}

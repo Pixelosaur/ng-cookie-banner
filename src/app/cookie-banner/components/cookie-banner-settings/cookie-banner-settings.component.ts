@@ -1,9 +1,11 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cookie-banner-settings',
-  templateUrl: './cookie-banner-settings.component.html'
+    selector: 'app-cookie-banner-settings',
+    templateUrl: './cookie-banner-settings.component.html',
 })
 export class CookieBannerSettingsComponent {
-  constructor() {}
+    isSettingsContentCollapsed: boolean = true;
+
+    constructor() {}
 }

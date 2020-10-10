@@ -1,1 +1,39 @@
-Hello from settings
+<div>
+    <div class="settingsTitle"
+         (click)="isSettingsContentCollapsed = !isSettingsContentCollapsed">
+        Advertising
+        <i class="fas"
+           [ngClass]="{
+                'fa-angle-down': isSettingsContentCollapsed,
+                'fa-angle-up': !isSettingsContentCollapsed
+            }">
+        </i>
+    </div>
+    <div class="settingsContent"
+         id="collapsedSettingsContent"
+         [ngbCollapse]="isSettingsContentCollapsed">
+        We use social media tools on our website to enable sharing from our website.
+
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Plugins</th>
+                    <th scope="col">Block/Enable</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Analytics</td>
+                    <td>button</td>
+                    <td>Go to site</td>
+                </tr>
+                <tr>
+                    <td>Google Analytics</td>
+                    <td>button</td>
+                    <td>Go to site</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
