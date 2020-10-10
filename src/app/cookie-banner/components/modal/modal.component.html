@@ -9,15 +9,26 @@
 <div class="modal-body">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet tortor neque. Donec at erat facilisis nibh sollicitudin hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam sem ligula, interdum eu lorem ut, mattis pretium velit. Nulla eu lorem nisl. Sed ornare ultricies tincidunt.</p>
 </div>
-<div class="modal-footer d-flex justify-content-start align-items-center">
-    <button type="button"
-            class="btn btn-success"
-            (click)="activeModal.close('Close click')">
+<div class="modal-footer d-flex justify-content-between align-items-center">
+    <div>
+      <button type="button"
+              class="btn btn-success mr-2"
+              (click)="activeModal.close('Close click')">
         Accept All
-    </button>
-    <button type="button"
-            class="btn btn-outline-secondary"
-            (click)="activeModal.close('Close click')">
-      Save Settings
-    </button>
+      </button>
+      <button type="button"
+              class="btn btn-outline-secondary"
+              (click)="activeModal.close('Close click')">
+        Save Settings
+      </button>
+    </div>
+  <span (click)="isCollapsed = !isCollapsed">
+    Customize
+    <i *ngIf="!isCollapsed" class="fas fa-angle-up"></i>
+    <i *ngIf="isCollapsed" class="fas fa-angle-down"></i>
+  </span>
+</div>
+
+<div id="collapsedContent" [ngbCollapse]="isCollapsed">
+  Hello collapse
 </div>
