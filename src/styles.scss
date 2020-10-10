@@ -6,9 +6,34 @@ body {
     font-family: 'Raleway', 'Roboto', sans-serif;
 
     .btn {
-        font-weight: 600 !important;
+        font-weight: 600;
         letter-spacing: 0.5px;
         font-size: 0.875rem;
+        min-width: 130px;
+        border-radius: 0;
+        padding: 10px 14px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .banner-btn {
+        background-color: #7ebf4b;
+        color: white;
+
+        &:hover {
+            color: white;
+            background-color: darken(#7ebf4b, 5%);
+        }
+    }
+
+    .banner-btn-outline {
+        @extend .banner-btn;
+        border: 1px solid white;
+        background-color: transparent;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
     }
 
     .app-wrapper {

@@ -12,19 +12,5 @@
             vertical-align: middle;
             margin-right: 25px;
         }
-
-        .banner-btn {
-            background-color: #7ebf4b;
-            color: white;
-            border-radius: 0;
-            padding: 10px 14px;
-            min-width: 130px;
-        }
-
-        .banner-btn-outline {
-            @extend .banner-btn;
-            border: 1px solid white;
-            background-color: transparent;
-        }
     }
 }
