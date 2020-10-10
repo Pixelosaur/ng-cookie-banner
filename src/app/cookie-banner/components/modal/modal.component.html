@@ -3,7 +3,7 @@
     <button type="button"
             class="close"
             (click)="activeModal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
+      <i class="fas fa-times"></i>
     </button>
 </div>
 <div class="modal-body">
@@ -24,8 +24,9 @@
     </div>
   <span (click)="isCollapsed = !isCollapsed">
     Customize
-    <i *ngIf="!isCollapsed" class="fas fa-angle-up"></i>
-    <i *ngIf="isCollapsed" class="fas fa-angle-down"></i>
+    <i class="fas"
+       [ngClass]="{'fa-angle-down': isCollapsed, 'fa-angle-up': !isCollapsed}">
+    </i>
   </span>
 </div>
 
