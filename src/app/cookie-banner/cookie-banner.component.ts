@@ -29,7 +29,6 @@ export class CookieBannerComponent implements OnInit {
     open() {
         const modalRef = this.modalService.open(ModalComponent, {
             size: 'lg',
-            scrollable: true,
             windowClass: 'cookie-modal',
         });
         modalRef.componentInstance.bannerSettings = this.bannerSettings;
