@@ -19,8 +19,8 @@ export class CookieBannerComponent implements OnInit {
     }
 
     getBannerSettings(): void {
-        this.cookieBannerService.getPrivacySettings().subscribe((settings: CookieBanner[]) => {
-            this.bannerSettings = settings;
+        this.cookieBannerService.getPrivacySettings().subscribe((bannerSettings: CookieBanner[]) => {
+            this.bannerSettings = bannerSettings;
         });
     }
 
@@ -30,6 +30,6 @@ export class CookieBannerComponent implements OnInit {
             scrollable: true,
             windowClass: 'cookie-modal',
         });
-        modalRef.componentInstance.name = 'World';
+        modalRef.componentInstance.bannerSettings = this.bannerSettings;
     }
 }

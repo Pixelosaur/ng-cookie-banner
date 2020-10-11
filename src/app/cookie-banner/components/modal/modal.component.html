@@ -39,5 +39,7 @@
 <div id="collapsedContent"
      class="settings-wrapper"
      [ngbCollapse]="isCollapsed">
-    <app-cookie-banner-settings></app-cookie-banner-settings>
+    <div *ngFor="let banner of bannerSettings">
+      <app-cookie-banner-settings [banner]="banner"></app-cookie-banner-settings>
+    </div>
 </div>

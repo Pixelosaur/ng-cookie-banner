@@ -1,5 +1,6 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { CookieBanner } from '../../interfaces/cookie-banner.interface';
 
 @Component({
     selector: 'app-modal',
@@ -8,8 +9,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
     styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent {
-    // TODO: Add proper type
-    @Input() content: any;
+    @Input() bannerSettings: CookieBanner[];
 
     isCollapsed: boolean = true;
 
