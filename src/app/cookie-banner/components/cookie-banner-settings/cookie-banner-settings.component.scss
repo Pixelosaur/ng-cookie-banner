@@ -15,7 +15,14 @@
 
     .title {
         padding: 20px 0;
-        cursor: pointer;
+
+        .fas {
+            cursor: pointer;
+            width: 40px;
+            height: 20px;
+            text-align: right;
+            padding-top: 4px;
+        }
     }
 
     .content {
@@ -30,6 +37,66 @@
         td,
         th {
             padding: 6px;
+        }
+    }
+
+    .custom-switch {
+        .custom-control-input {
+            z-index: 2;
+            width: 2.25rem;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+
+                ~ .custom-control-label {
+                    &::before {
+                        box-shadow: none;
+                    }
+                }
+                &:not(:checked) {
+                    ~ .custom-control-label {
+                        &::before {
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            &:checked {
+                ~ .custom-control-label {
+                    &::before {
+                        box-shadow: none;
+                        border-color: transparent;
+                        background-color: lighten(#7ebf4b, 30%);
+                    }
+
+                    &::after {
+                        background-color: #7ebf4b;
+                        transform: translateX(1.25rem);
+                    }
+                }
+            }
+        }
+
+        .custom-control-label {
+            padding-left: 10px;
+            cursor: pointer;
+
+            &::after {
+                top: calc(0.25rem + 2px);
+                left: calc(-2.25rem + 3px);
+                width: calc(1rem - 6px);
+                height: calc(1rem - 6px);
+                background-color: white;
+            }
+
+            &::before {
+                width: 2.25rem;
+                height: 0.875rem;
+                background-color: #dcdcdc;
+                border: none;
+            }
         }
     }
 }
