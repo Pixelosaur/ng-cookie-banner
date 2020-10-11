@@ -19,9 +19,11 @@ export class CookieBannerComponent implements OnInit {
     }
 
     getBannerSettings(): void {
-        this.cookieBannerService.getPrivacySettings().subscribe((bannerSettings: CookieBanner[]) => {
-            this.bannerSettings = bannerSettings;
-        });
+        this.cookieBannerService
+            .getPrivacySettings()
+            .subscribe((bannerSettings: CookieBanner[]) => {
+                this.bannerSettings = bannerSettings;
+            });
     }
 
     open() {
